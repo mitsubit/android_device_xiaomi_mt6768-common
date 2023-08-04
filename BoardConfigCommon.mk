@@ -69,7 +69,8 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6768
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := gengkapak
 TARGET_KERNEL_LLVM_BINUTILS := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-Wno-unused-command-line-argument" CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_COMPAT=arm-linux-gnueabi- AR=llvm-ar LD=ld.lld NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
+KERNEL_CLANG_TRIPLE := CLANG_TRIPLE=aarch64-linux-gnu-
+TARGET_KERNEL_ADDITIONAL_FLAGS := CROSS_COMPILE_COMPAT=arm-linux-gnueabi- AR=llvm-ar LD=ld.lld NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
