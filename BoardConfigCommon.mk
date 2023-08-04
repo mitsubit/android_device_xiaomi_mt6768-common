@@ -69,7 +69,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6768
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := gengkapak
 KERNEL_CC := CC="ccache clang"
-KERNEL_CLANG_TRIPLE := CLANG_TRIPLE=aarch64-linux-gnu-
+KERNEL_CLANG_TRIPLE := CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_COMPAT=arm-linux-gnueabi-
 TARGET_KERNEL_ADDITIONAL_FLAGS := AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
 KERNEL_LD := LD=ld.lld
 BOARD_KERNEL_SEPARATED_DTBO := true
