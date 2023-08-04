@@ -1,1 +1,2 @@
 vendor_restricted_prop(vendor_fingerprint_prop);
+type vendor_power_prop, property_type;
